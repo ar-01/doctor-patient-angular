@@ -1,0 +1,30 @@
+<h2>Doctors</h2>
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label>Select Doctor :</label>
+        <select id="selectDoctor" name="selectDoctor">
+            <option *ngFor="let doctor of doctors" [value]="doctor.id">{{doctor.name}}</option>
+        </select>
+        <button class="btn btn-info" type="submit">Search</button>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Specialization</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+<h2>Patients</h2>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Patient Id:</label>
+        <input [(ngModel)]="id" type="text" id="pId" name="pId">
+        <button class="btn btn-info" type="submit">Search</button>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Visited Doctor</th>
+            <th>Date Of Visit</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </tbody>
+</table>
+<div *ngIf="error">
+    <p style="color: red;">{{error}}</p>
+</div>
